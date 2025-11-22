@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stick Hero — Updated (Parallax + Particles)</title>
+  
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  
+  <div class="container">
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+      <img id="logo" src="./image/Stick Hero+ logo.png" alt="Stick Hero+ logo" onerror="this.style.display='none'"/>
+      <div id="score">Score: 0</div>
+      <div id="highscore">High: 0</div>
+    </div>
+
+    <div id="controls">
+      <button id="restart" class="btn" style="display:none">Restart</button>
+    </div>
+
+    <div id="startScreen" class="overlay">
+      <img src="./Stick Hero+ logo.png" alt="logo" style="width:140px;height:140px;border-radius:18px;margin-bottom:12px;" onerror="this.style.display='none'"/>
+      <h1 style="font-size:26px;margin:6px 0;color:white;">Stick Hero+</h1>
+      <p style="opacity:0.9;max-width:520px;margin:6px 0">Parallax • Advanced particles • Day & night • Responsive for phones & tablets</p>
+      <button id="startBtn">Tap to Start</button>
+    </div>
+
+    <div id="endScreen" class="overlay" style="display:none">
+      <div id="endCard">
+        <h2 id="finalScore">Score: 0</h2>
+        <p id="scoreSummary" style="margin:6px 0">Nice run!</p>
+        <div style="display:flex;gap:8px;justify-content:center;margin-top:12px">
+          <button id="playAgain" class="btn">Play Again</button>
+          <a class="btn" href="https://buymeacoffee.com/whitehatdesigner" target="_blank" rel="noopener">Support Me ☕</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- background music (low volume, loop). Place file at assets/music/background.mp3 -->
+  <audio id="bgMusic" src="./music/gamebg-music.mp3" loop preload="auto"></audio>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

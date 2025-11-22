@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --ui-font: "Segoe UI", Roboto, Arial, sans-serif;
+  --base-w: 375;
+  /* logical world width */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #07060a;
+}
+
+body {
+  font-family: var(--ui-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas#game {
+  display: block;
+  touch-action: none;
+  background: transparent;
+}
+
+/* HUD - responsive */
+#hud {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+#logo {
+  height: 52px;
+  width: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#score {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 12px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+#highscore {
+  font-size: 13px;
+  color: #ddd;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+#controls {
+  position: fixed;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 30;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+/* big start / end overlays */
+.overlay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 35;
+}
+
+#startScreen {
+  pointer-events: auto;
+}
+
+#startBtn {
+  margin-top: 18px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff7a59, #ff3b3b);
+  border: none;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#endCard {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* responsive tweaks */
+@media (max-width: 520px) {
+  #logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  #score {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  #startBtn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 7px 9px;
+    font-size: 14px;
+  }
+}
+
+/* safe area on iOS notch */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
+}
