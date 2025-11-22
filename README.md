@@ -1,6 +1,7 @@
 # Stick-Hero
 
-# <p align="center"><img width="600" height="600" alt="Stick Hero+ logo" src="https://github.com/user-attachments/assets/f837341a-8dbc-47e9-91f2-c8671e495b2e" /></p>
+# <p align="center"><img width="500" height="500" alt="Stick Hero+ logo" src="https://github.com/user-attachments/assets/aba4d0bc-5016-4f72-bb5d-8283c58e9bb5" /></p>
+
 
 <h1 align="center">Stick Hero+ 1.0.0</h1>
 
