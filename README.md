@@ -3,7 +3,7 @@
 # <p align="center"><img width="500" height="500" alt="Stick Hero+ logo" src="https://github.com/user-attachments/assets/aba4d0bc-5016-4f72-bb5d-8283c58e9bb5" /></p>
 
 
-<h1 align="center">Stick Hero+ 1.0.0</h1>
+<h1 align="center">Stick Hero+ 2.0.0</h1>
 
 <p align="center">
 A modern, enhanced, and fully upgraded HTML5 version of the classic Stick Hero game.  
