@@ -150,11 +150,6 @@ Add your images here later:
 Developer • Designer • Digital Experience Creator
 
 ---
-Support Me
-
-If you enjoy this project or want to support my work, you can buy me a coffee:
-
-Support Us 👉 https://buymeacoffee.com/whitehatdesigner
 
 Your support helps me continue creating free and open projects.
 
